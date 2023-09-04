@@ -1,0 +1,327 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+html,body {
+    height:100%;
+    background:url('../img/bg.jpeg') no-repeat 0px 0px;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+button{
+    width: auto;
+    height:auto;
+    background-color: rgba(228, 0, 127, 0.51);
+    text-align:center;
+    color:#FFFFFF;
+    padding:3px 3px 3px 3px;
+    font-family: 微软黑体,Arial,Helvetica,Verdana,sans-serif;
+    border-radius:1px;
+    letter-spacing: 0px;
+}
+input[type="submit"],input[type="reset"]{
+    background-color:rgba(228, 0, 127, 0.51);
+    color:#fff;
+    padding:3px 3px 3px 3px;
+    border-radius:0.5px;
+    font-size: 15px;
+    width:10%;
+    text-align: center;
+    cursor:pointer;
+    margin-bottom: 10px;
+    letter-spacing: 10px;
+}
+
+input[type="submit"]:hover{
+    background:rgba(242,220,241,0.48);
+    color: rgba(228, 0, 127, 0.51);
+}
+
+input[type="reset"]:hover{
+     background:rgba(242,220,241,0.48);
+     color: rgba(228, 0, 127, 0.51);
+ }
+
+button:hover{
+    background:rgba(242,220,241,0.48);
+    color: rgba(228, 0, 127, 0.51);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+header{
+    height:15%;
+    width:100%;
+    background:rgba(212,191,200,0.6);
+    flex: 0 0 auto;
+}
+
+header P{
+    text-align:center;
+    font-weight:bold;
+    font-family:"Microsoft YaHei",微软雅黑;
+    font-size:20px;
+    color:#E4007F;
+}
+header img{
+
+    width:15%;
+    height:80%;
+    padding:5px;
+}
+
+.main{
+    flex: 1 0 auto;
+
+    width:90%;
+    margin:0 auto;
+    background-color: antiquewhite;
+}
+footer{
+    flex: 0 0 auto;
+    height:10%;
+    text-align: center;
+}
+footer a{
+    color:white;
+    text-decoration:underline;
+    font-size:13px;
+    letter-spacing:1px;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+.meun_a{
+
+
+    line-height: 100%;
+}
+
+.navBar{
+    margin: 0 auto;
+    width:100%;
+    background-color:#E4007F;
+    height:5%;
+    display:inline;
+    text-align: center;
+}
+
+.navBar P{
+    margin-left: 10px;
+    text-align:left;
+    font-weight:bold;
+    font-family:"Microsoft YaHei",微软雅黑;
+    font-size:20px;
+    color:#fdfdfd;
+
+}
+.navBar .menu>li{
+    float: left;
+    position: relative;
+    border-left:1px solid #bbb;
+    color:#FFFFFF;
+    text-align: center;
+    min-width: 120px;
+
+    line-height: 37px;
+
+}
+.menu>li:first-child{
+    font-size: 20px;
+    margin-left: 10%;
+    border-left:none;
+}
+
+
+
+.submenu a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 0 25px;
+    background-color: rgba(228, 0, 127, 0.34);
+    font-size: 10px;
+    line-height: 30px;
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+}
+
+.submenu li:hover>a{
+    color: #E4007F;
+
+}
+.submenu{
+    position: absolute;
+    max-height: 0;
+    left: 0;
+    top: 100%;
+    perspective: 1000px;
+    min-width: 120px;
+
+}
+.submenu li{
+    transform-origin: 0 0;
+    visibility: hidden;
+    transform: rotate3d(0,1,0,90deg);
+    transition: all 0.5s;
+}
+.menu>li:hover .submenu{
+    max-height: 999px;
+    z-index: 10;
+}
+.menu>li:hover .submenu li{
+    visibility: visible;
+    transform: rotate3d(0,0,0,0);
+
+}
+.submenu li:nth-child(1){
+    transition-delay: 0ms;
+}
+.submenu li:nth-child(2){
+    transition-delay: 50ms;
+}
+.submenu li:nth-child(3){
+    transition-delay: 100ms;
+}
+.submenu li:nth-child(4){
+    transition-delay: 150ms;
+}
+.table_norm{
+    width: 90%;
+    margin: 2% auto;
+    table-layout: fixed;
+    border-spacing: 0;/*去掉单元格间隙*/
+}
+.table_norm a{
+    text-decoration: none;
+    color: #029ef3;
+}
+.table_norm a:hover{
+    color: #0f74a8;
+}
+.table_norm  td{
+    font-size: 15px;
+    border-collapse: collapse;
+    margin: 10px auto;
+    border: 1px solid rgba(228, 0, 127, 0.24);
+    padding: 5px;
+    text-align: center;
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+
+}
+.table_min{
+    border: 1px solid rgba(228, 0, 127, 0.24);
+    border-collapse: collapse;
+    padding: 8px;
+    margin: 2px auto;
+    text-align: center;
+}
+.table_min td{
+    font-size: 5px;
+    border-collapse: collapse;
+    margin: 5px auto;
+    border: 1px solid rgba(228, 0, 127, 0.24);
+    padding: 2px;
+    text-align: center;
+}
+.td_label{
+    background-color: rgba(218, 186, 227, 0.25);
+    font-weight: bold;
+    width: 15%;
+}
+.table_norm input{
+    padding:5px 5px 5px 10px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+.table_norm .first-tr{
+    background-color: rgba(218, 186, 227, 0.9);
+    color: #2a2f34;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.h_{
+
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.num_title>p{
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item1 {grid-area: one;}
+.item2 {grid-area: two;}
+.item3 {grid-area: three;}
+.item4 { grid-area: four; }
+.item5 { grid-area: five; }
+.item6 { grid-area: six; }
+.item7 { grid-area: seven; }
+.grid-container{
+    display: grid;
+    grid:
+            'one one one two two two two two two three three three '
+            'one one one two two two two two two three three three '
+            'one one one two two two two two two three three three '
+            'one one one two two two two two two three three three '
+            'four four four two two two two two two five five five '
+            'four four four two two two two two two five five five '
+            'four four four two two two two two two five five five '
+            'four four four two two two two two two five five five '
+            'six six six six six six six six six six six six '
+            'six six six six six six six six six six six six '
+            'six six six six six six six six six six six six '
+            'six six six six six six six six six six six six ';
+    grid-gap: 5px;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+
+}
+.table_Statistic{
+    width: 100%;
+    margin: 10px auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-container2{
+    display: grid;
+    grid:
+            'one one one two two two '
+            'one one one two two two  '
+            'one one one two two two  '
+            'one one one two two two  '
+            'four four four two two two '
+            'four four four two two two  '
+            'four four four two two two '
+            'four four four two two two  ';
+
+    grid-gap: 5px;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+
+}

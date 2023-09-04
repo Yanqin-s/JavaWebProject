@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.itms.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginOutServlet</servlet-name>
+        <servlet-class>com.itms.servlet.LoginOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginOutServlet</servlet-name>
+        <url-pattern>/loginOutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProjectServlet</servlet-name>
+        <servlet-class>com.itms.servlet.ProjectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProjectServlet</servlet-name>
+        <url-pattern>/projectServlet?action=list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProjectLookServlet</servlet-name>
+        <servlet-class>com.itms.servlet.ProjectLookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProjectLookServlet</servlet-name>
+        <url-pattern>/projectLookServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewProjectEditServlet</servlet-name>
+        <servlet-class>com.itms.servlet.NewProjectEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewProjectEditServlet</servlet-name>
+        <url-pattern>/newProjectEditServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddTaskServlet</servlet-name>
+        <servlet-class>com.itms.servlet.AddTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTaskServlet</servlet-name>
+        <url-pattern>/addTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DoingProjectDetailsServlet</servlet-name>
+        <servlet-class>com.itms.servlet.DoingProjectDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoingProjectDetailsServlet</servlet-name>
+        <url-pattern>/doingProjectDetailsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyTaskLookServlet</servlet-name>
+        <servlet-class>com.itms.servlet.MyTaskLookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyTaskLookServlet</servlet-name>
+        <url-pattern>/myTaskLookServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetTaskServlet</servlet-name>
+        <servlet-class>com.itms.servlet.GetTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetTaskServlet</servlet-name>
+        <url-pattern>/getTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TaskDetailsServlet</servlet-name>
+        <servlet-class>com.itms.servlet.TaskDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TaskDetailsServlet</servlet-name>
+        <url-pattern>/taskDetailsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditTaskServlet</servlet-name>
+        <servlet-class>com.itms.servlet.EditTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditTaskServlet</servlet-name>
+        <url-pattern>/editTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveTaskServlet</servlet-name>
+        <servlet-class>com.itms.servlet.SaveTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveTaskServlet</servlet-name>
+        <url-pattern>/saveTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteTaskServlet</servlet-name>
+        <servlet-class>com.itms.servlet.DeleteTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteTaskServlet</servlet-name>
+        <url-pattern>/deleteTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyNewsLookServlet</servlet-name>
+        <servlet-class>com.itms.servlet.MyNewsLookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyNewsLookServlet</servlet-name>
+        <url-pattern>/myNewsLookServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewsGenerateServlet</servlet-name>
+        <servlet-class>com.itms.servlet.NewsGenerateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewsGenerateServlet</servlet-name>
+        <url-pattern>/newsGenerateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditNewsServlet</servlet-name>
+        <servlet-class>com.itms.servlet.EditNewsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditNewsServlet</servlet-name>
+        <url-pattern>/editNewsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SingleProjectStatistic</servlet-name>
+        <servlet-class>com.itms.servlet.SingleProjectStatistic</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SingleProjectStatistic</servlet-name>
+        <url-pattern>/singleProjectStatistic</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MultiProjectStatistic</servlet-name>
+        <servlet-class>com.itms.servlet.MultiProjectStatistic</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MultiProjectStatistic</servlet-name>
+        <url-pattern>/multiProjectStatistic</url-pattern>
+    </servlet-mapping>
+</web-app>
